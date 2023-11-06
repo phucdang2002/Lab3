@@ -1,4 +1,3 @@
-import { View } from "react-native";
 import ProductsScreen from "./Products/Products";
 import Add from "./Products/Product_Add";
 import Search from "./Products/Product_Search";
@@ -6,6 +5,7 @@ import Detail from "./Products/Product_Detail";
 import React, { useState } from "react";
 import { BottomNavigation } from "react-native-paper";
 import { SafeAreaProvider } from "react-native-safe-area-context";
+// import 'react-native-gesture-handler';
 
 function App() {
   const [index, setIndex] = useState(0);
@@ -20,8 +20,6 @@ function App() {
     Add: Add,
     Search: Search,
     Detail: Detail
-
-
   })
   return (
     <SafeAreaProvider>
@@ -31,6 +29,7 @@ function App() {
         renderScene={renderScene}
       />
     </SafeAreaProvider>
+    
   )
 }
 export default App;

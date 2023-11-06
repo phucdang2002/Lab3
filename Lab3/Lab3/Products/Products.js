@@ -2,7 +2,18 @@ import {useState, useEffect} from 'react';
 import {View, ScrollView, Image, FlatList, Button} from 'react-native';
 import {Text} from 'react-native-paper';
 import {SafeAreaView} from 'react-native-safe-area-context';
+import { createStackNavigator } from "@react-navigation/stack";
+// import {NavigationContainer}from"@react-navigation/native";
 
+// const Stack =createStackNavigator();
+// function MyStack() {
+//   return (
+//     <Stack.Navigator>
+//       <Stack.Screen name="Home" component={ProductsScreen}/>
+//       <Stack.Screen name="Detail" component={Detail}/>
+//     </Stack.Navigator>
+//   )
+// }
 const ProductsScreen = () => {
   const [data, setData] = useState([]);
   const filePath = 'https://dummyjson.com/products';
@@ -59,5 +70,12 @@ const ProductsScreen = () => {
     </SafeAreaView>
   );
 };
+// const navigation = () =>{
+//   return (
+//     <NavigationContainer>
+//       <MyStack/>
+//     </NavigationContainer>
+//   )
+// }
 
 export default ProductsScreen;

@@ -1,7 +1,6 @@
 import {useState, useEffect} from 'react';
 import {Alert, View, TextInput, Button} from 'react-native';
 import {Text} from 'react-native-paper';
-import { blue100 } from 'react-native-paper/lib/typescript/styles/themes/v2/colors';
 import {SafeAreaView} from 'react-native-safe-area-context';
 
 const Add = () => {
