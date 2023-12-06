@@ -5,7 +5,7 @@ import Detail from "./Products/Product_Detail";
 import React, { useState } from "react";
 import { BottomNavigation } from "react-native-paper";
 import { SafeAreaProvider } from "react-native-safe-area-context";
-// import 'react-native-gesture-handler';
+import 'react-native-gesture-handler';
 
 function App() {
   const [index, setIndex] = useState(0);
